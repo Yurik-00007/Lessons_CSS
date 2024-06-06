@@ -7,6 +7,8 @@
 5. CSS справочник атрибут: https://webref.ru/css
 6. Имена цветов: https://www.w3.org/wiki/CSS/Properties/color/keywords
 7. Конвертер цвета: https://color2.ru/rgb-hex
+7. Конвертер цвета: https://htmlbook.ru/css/border-style
+8. Курсор: https://webref.ru/css/cursor
 */
 
 
@@ -19,107 +21,95 @@
 }
 */
 /*
-span{
-    color:red; !**!
-    background-color: #5387ed;
+Псевдоклассы
+СЕЛЕКТОР: ПСЕВДОКЛАСС{
+СВОЙСТВО:ЗНАЧЕНИЕ;
+СВОЙСТВО:ЗНАЧЕНИЕ;
+СВОЙСТВО:ЗНАЧЕНИЕ;
 }
 */
-
 /*
-!*использование id- идентификатора
-❗ не забудь обращение css файле к id по #NAME>
-*!
-#first_span{
-    color:red;
-    background-color: #d3b39a;
-
-}
-#second{
-    color: green;
-    background-color: #d3b39a;
-
-}
-#third{
-    color:yellow;
-    background-color: #d3b39a;
-
-}
+top-верх,
+bottom-низ,
+left-левый,
+right-правый
 */
 
-/*использование классов(через точку(.))
-❗ не забудь обращение css файле к классу через .NAME>
-*/
+/*1*/
 .first_span{
-    color:red;
-}
-.second{
-    color: green;
-}
-
-.third{
-    color:yellow;
-}
-
-.element{
-    background-color: #d3b39a;
-}
-
-.some{
-    /*background-color: #c47fc4;*/
-    /*background-color: rgb(255,255,255);*/
-/*   В цветовой модели RGB каждый цвет состоит из значения трёх основных цветов - красного, зелёного и синего.
- Значение основных цветов располагается в диапазоне от 0 до 255
- rgb(0,0,0)-черный цвет
- rgb(255,255,255)-белый цвет
- */
-
-    /*background-color: rgba(255, 0, 0, 1);*/
-    /*background-color: rgba(0, 255, 0, 0.5);*/
-    /*background-color: rgba(0, 0, 255, .3);*/
-
     /*
-    RGBA (Red, Green, Blue, Alpha) — это модель цветового пространства,
-    R (Red) — красный цветовой канал. Значение может быть в диапазоне от 0 до 255.
-    G (Green) — зелёный цветовой канал. Значение может быть в диапазоне от 0 до 255.
-    B (Blue) — синий цветовой канал. Значение может быть в диапазоне от 0 до 255.
-    A (Alpha) — канал прозрачности (альфа-канал). Значение может быть в диапазоне от 0 до 1, где 0 означает полностью
-    прозрачный, а 1 — полностью непрозрачный.
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000;
     */
-
-    /*background-color: #F00;*/
-    /*background-color: #FF0000;*/
-    background-color: #FF000099;
-    /*структура такая же как у rgb но может быть и прозрачность */
-    /*HEX (шестнадцатеричный цветовой код) — это способ представления цветов От 0 до F
-
-
-    шестнадцатеричная система
-    0 1 2 3 4 5 6 7 8 9  A  B  C  D  E  F
-    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+/*    аналогичная  короткая запись*/
+/*    border: 1px dashed red;*/
+/*    добавим рамку с лева*/
+/*    border-left: 1px dashed blue;*/
+    /*
+    border-left-width: 1px;
+    border-left-style: dotted;
+    border-left-color: #77d36a;
     */
+/*    |____| */
+    border: 1px dashed blue;
+    /*border-top: 0 ;*/
+    /*border-top: none ;*/
+/*    порядок имеет значения если в обратном парядке будет убрана верхняя линия а потом будет обводка полностью*/
+/*    скругление */
+    border: 1px dashed blue;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
+/*2*/
+/*Нужно использовать div так он занимает всю ширину а span по длине контента*/
+/*Определяет горизонтальное выравнивание текста в пределах элемента.*/
+
+.first_div{
+    background-color: pink;
+    /*Определяет горизонтальное выравнивание текста в пределах элемента.*/
+    text-align: center;
+    /*Устанавливает форму курсора*/
+    cursor: pointer;
+    /*Определяет уровень прозрачности элемента веб-страницы.*/
+    opacity: .4;
+}
+
+/*2*/
+/*
+  Псевдоклассы могут применяться для стилизации состояний ссылок и интерактивных элементов:
+  1.Ссылки (<a>):
+  2.Кнопки (<button>, <input type="button">, <input type="submit">, <input type="reset">):
+  3.Формы и их элементы(<input>, <textarea>, <select>, <option>)
+  4.Элементы списков и структуры документа:
+      Элементы списков (<li>):
+    :first-child, :last-child, :nth-child(n), :nth-of-type(n)
+    Элементы структуры документа (любые HTML-элементы):
+    :first-child, :last-child, :nth-child(n), :nth-of-type(n)
+  5.Псевдоклассы для конкретных ситуаций
+    not(selector) — применяется для исключения элементов, соответствующих заданному селектору
+    lang(language) — применяется для элементов с определённым языковым атрибутом.
 
 
+  */
 
+.first_button{
+    /*hover->Определяет стиль элемента при наведении на него курсора мыши, но при этом элемент ещё не активирован.*/
+    background-color: deeppink;
+}
 
+.first_button:hover{
+    /*hover->Определяет стиль элемента при наведении на него курсора мыши, но при этом элемент ещё не активирован.*/
+    background-color: greenyellow;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.first_button:focus{
+    /*focus Определяет стиль для элемента, получающего фокус.*/
+    outline: none;
+    /*outline->Универсальное свойство, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырёх сторонах элемента.*/
+    background-color: cornflowerblue;
+}
 
 
 
