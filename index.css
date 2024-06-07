@@ -81,16 +81,20 @@ vh (viewport height): 1 единица vh равна 1% высоте окна п
 
     background-color: #555;
     width: 30%;
-    height: 90%;
+    height: 80%;
 }
 
 .main {
     display: inline-block;
     background-color: #333;
     width: 70%;
-    height: 90%;
+    height: 80%;
 }
 
+.footer{
+    background-color: #222;
+    height: 10%;
+}
 /*div{*/
 /*    background-color: #fde900;*/
 /*    display: inline-block;*/
