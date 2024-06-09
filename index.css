@@ -56,56 +56,45 @@ vh (viewport height): 1 единица vh равна 1% высоте окна п
     margin: 0px;
 }
 
-.header {
-    background-color: #999;
-    /*Ширину и высоту можно задать различными единицами измерения:px,% vw,vh*/
-
-    /*1*/
-    /*width: 70px;*/
-    /*height: 100px;*/
-
+.fontText {
+    font-size: 32px;/*Размер шрифта */
+    /*font-size Определяет размер шрифта элемента. Обычно это 16px.*/
     /*
-    !*2*!
-    width: 90%;
-    !*с шириной все хорошо но будет проблема с высотой*!
-    height: 50%;
-    !*   проблема происходит из за того что height наследуеться от РОДИТЕЛЯ. В данной ситуации родитель будет body.
-    Если задать height:100px в ручную то все сработает если же этого значения нет то будет ширина текста
-    или нужно задавать высоту для html высоту 100% и для body высоту  100% то тогда % будут работать  *!
+    font-family: "Times New Roman";
+    font-family: Impact,Arial, Helvetica, sans-serif;!*Какой шрифт подключаем *!
     */
-    height: 10%;
+    font-family: 'Roboto-Bold',Arial, Helvetica, sans-serif;;/*Какой шрифт подключаем */
+    /*    Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+    font-weight: bold;/*Толщина шрифта */
+    /*    Насыщенность шрифта задаётся с помощью ключевых слов: bold — жирное начертание и normal — нормальное начертание.
+    Также допустимо использовать условные единицы от 100 до 900.*/
+font-style: italic; /*Наклон */
+/*    Определяет начертание шрифта — обычное, курсивное или наклонное. */
 }
 
-.aside {
-    display: inline-block;
+/* Для подключения шрифта нужно сделать следующее
+@font-face позволяет загрузить специфичный шрифт на компьютер пользователя.
+font-family: "Roboto-Light";  Имя шрифта
+src: url("./Roboto/Roboto-Light.ttf");
+Ссылка на шрифтовой файл. Ссылка записывается в виде src: url(<адрес>), где <адрес> — относительный или абсолютный путь к файлу.
+*/
 
-    background-color: #555;
-    width: 30%;
-    height: 80%;
+/* Распространенных форматов шрифтов добавляется к src после url format
+1.TrueType Font (TTF)
+2. Web Open Font Format (WOFF и WOFF2)
+3. Embedded OpenType (EOT)
+*/
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("./Roboto/Roboto-Light.ttf") format("truetype");
+    /*
+    src: url("./Roboto/Roboto-Light.ttf") format("truetype"), url("./Roboto/Roboto-Light.woff2") format("woff2");
+    */
 }
-
-.main {
-    display: inline-block;
-    background-color: #333;
-    width: 70%;
-    height: 80%;
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("./Roboto/Roboto-Bold.ttf") format("truetype");
 }
-
-.footer{
-    background-color: #222;
-    height: 10%;
-}
-/*div{*/
-/*    background-color: #fde900;*/
-/*    display: inline-block;*/
-/*    !*inline-Элемент отображается как строчный.*!*/
-/*    !*inline-block Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно*/
-/*    строчному элементу. Но у него есть ширина и высота*!*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*}*/
-
-
 
 
 
