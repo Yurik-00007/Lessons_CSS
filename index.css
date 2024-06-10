@@ -34,73 +34,100 @@ bottom-низ,
 left-левый,
 right-правый
 */
+
+/*
+
+display:flex ->размечает контейнер для его элементов
+
+justify-content->Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера.
+
+justify-content: flex-start | flex-end | center | space-between |
+                 space-around | space-evenly
+
+flex-start->Флексы прижаты к началу строки.
+flex-end -> Флексы прижаты к концу строки.
+center -> Флексы выравниваются по центру строки.
+space-between -> Флексы равномерно распределяются по всей строке. Первый и последний элемент прижимаются к соответствующим краям контейнера.
+space-around -> Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после последнего элементов равно половине пространства между двумя соседними элементами.
+space-evenly -> Флексы распределяются так, что расстояние между любыми двумя соседними элементами, а также перед первым и после последнего, было одинаковым.
+
+Свойство align-items выравнивает флекс-элементы внутри контейнера вдоль второстепенной оси направлении.
+
+align-items: flex-start | flex-end | center | baseline | stretch
+
+stretch->Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.
+baseline->Флексы выравниваются по их базовой линии.
+*/
+
 html {
     /*height: 100%;*/
 }
 
 body {
-    /*height: 100%;*/
-    /*width: 50%;*/
-    /*Занемай все пространство по окну браузера*/
     width: 100vw;
     height: 100vh;
-    /*3*/
-    /*Единицы измерения vw и vh, которые являются процентами от размеров окна просмотра (viewport). Эти единицы удобны
-    для создания адаптивного дизайна, поскольку они изменяются в зависимости от размера окна браузера.
-
-Подробное объяснение:
-vw (viewport width): 1 единица vw равна 1% ширины окна просмотра.
-vh (viewport height): 1 единица vh равна 1% высоте окна просмотра.
-*/
-
     margin: 0;
     font-size: 32px;
 }
+
 .container{
-    /*flex-> Сокращённое свойство, которое позволяет указать параметры элемента, чтобы он эффективно заполнял доступное пространство. */
     display: flex;
-    /*заполнение основного контейнера потомками  */
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
     background-color: #999;
     width: 100%;
-    height:50%;
-    justify-content: center;
-    /* Выравнивание по основной оси(горизонтальной)*/
+    height: 20%;
+    display: flex;
     align-items: center;
-    /*align-items: stretch;*/
-    /* Выравнивание по второстепенной оси(вертикальной)*/
-
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+    margin-left: 30px;
+    border-radius: 5px;
 }
 
-.first{
-border: 5px solid red;
-    /* margin(отступ вне контейнера)-> Устанавливает величину отступа от каждого края элемента. Отступом является пространство от границы текущего
-    элемента до внутренней границы его родительского элемента*/
-    /* margin: top right bottom left */
-    /*margin: 50px 10px 100px 45px;*/
-    /*margin-top: 50px;*/
-    /*margin-left: 50px;*/
-    /*margin-bottom: 50px;*/
-
-    /*padding(отступ внутри контейнера)->Устанавливает значение полей вокруг содержимого элемента. Полем называется расстояние от внутреннего края
-    рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое */
-    /*
-    padding-top: 50px;
-    padding-left: 50px;
-     */
-
-}
-/*Схлопывание происходит есл указаны 2 свойство как тут у first->margin-bottom: 100px; и у second->margin-top: 100px;
-отступ(margin) не будет 200px так как произойдет схлопывание. Если один margin(отступ) будет больше другого то возьмет наибольший margin(отступ)*/
-.second{
-    border: 5px solid green;
-    /*
-    margin-top: 100px;
-     */
-
-
+.avatar{
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
 }
 
+.box{
+    display: flex;
+    height: 60%;
+}
+.aside {
+    background-color: #555;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
 
+.aside a{
+    color: #fff;
+    display: inline-block;
+    margin: 5px 0 0 5px;
+}
+
+.main {
+    background-color: #333;
+    width: 70%;
+}
+
+.footer{
+    background-color: #222;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+    color: white;
+}
 
 
 
