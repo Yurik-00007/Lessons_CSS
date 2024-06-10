@@ -57,6 +57,9 @@ align-items: flex-start | flex-end | center | baseline | stretch
 
 stretch->Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.
 baseline->Флексы выравниваются по их базовой линии.
+
+свойства которые применяются на родителя: display:flex,justify-content,align-items,align-content
+свойства которые применяются на детей: align-self, order,flex-basis, flex-shrink,
 */
 
 html {
@@ -70,53 +73,83 @@ body {
     font-size: 32px;
 }
 
-.main{
+.main {
     background-color: #bbb;
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
-.main div{
+
+.main div {
     margin: 5px;
     padding-top: 5px;
-    width: 100px;
+    /*flex-basis: 100px;*/
+    /* Свойство flex-basis указывает на ширину. Оно приоритетнее чем width. flex-basis будет работать как ширина если указана flax-direction:row.
+     Если указана flax-direction:column flex-basis будет работать как высота и он будет иметь больше приоритет чем height.   */
+    /*width:400px;*/
     color: #fff;
     text-align: center;
     border-radius: 5px;
-}
-.child_1{
-    background-color: #660000;
-}
-.child_2{
-    background-color: #990066;
-}
-.child_3{
-    background-color: #333366;
-}
-.child_4{
-    background-color: #009999;
-}
-.child_5{
-    background-color: #009933;
+    /*flex-shrink: 0;*/
 }
 
-.main{
+.child_1 {
+    background-color: #660000;
+    order: 1;
+}
+
+.child_2 {
+    background-color: #990066;
+    order: 2;
+}
+
+.child_3 {
+    background-color: #333366;
+    order: 3;
+}
+
+.child_4 {
+    background-color: #009999;
+    order: 4;
+}
+
+.child_5 {
+    background-color: #009933;
+    order: 5;
+}
+
+.main {
     display: flex;
     /*flex-direction: row-reverse;*/
     /*flex-direction: column-reverse;*/
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: flex-start;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: nowrap;
-/*    flex-wrap-> Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк.*/
+    /*    flex-wrap-> Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк.*/
+
+    /*align-content: flex-start;*/
+    /*    Свойство align-content используется для выравнивания элементов внутри флекс- или грид-контейнера по поперечной оси.*/
 }
 
-.child_2{
+.child_2 {
     /*align-self: flex-end;*/
-/*    Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.*/
+    /*    Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.*/
+    flex-shrink: 5; /* сжимает элемент 1, не сжимать элемент 0*/
+    /*    Устанавливает коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению
+    к другим флексам, чтобы разместить все элементы в одну строку.
+
+    Если нужно сжимать какойто элемент сильней чем остальные можно поставить flex-shrink: 5; или любое другое число
+    */
 }
 
-.child_3{
+.child_3 {
+    /*flex-grow: 1;*/
+    /*flex-grow -> определяет нужно ли расширить указанный блок за счет не используемого пространства в контейнере*/
+    /* Свойство flex-grow определяет то, на сколько отдельный flex-блок может быть больше соседних элементов, если это необходимо.*/
     /*align-self: flex-start;*/
+    flex: 500px 0 1;
+/*    ширина сжимать расширять */
+/*    Свойство flex сокращение для flex-basis, flex-shrink и flex-grow.*/
 }
 
 
