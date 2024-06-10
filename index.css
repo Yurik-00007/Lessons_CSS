@@ -70,66 +70,54 @@ body {
     font-size: 32px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.header {
-    background-color: #999;
+.main{
+    background-color: #bbb;
     width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 500px;
 }
-.logo{
-    width: 140px;
-    margin-left: 30px;
+.main div{
+    margin: 5px;
+    padding-top: 5px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
     border-radius: 5px;
 }
-
-.avatar{
-    width: 120px;
-    border-radius: 50%;
-    margin-right: 30px;
+.child_1{
+    background-color: #660000;
+}
+.child_2{
+    background-color: #990066;
+}
+.child_3{
+    background-color: #333366;
+}
+.child_4{
+    background-color: #009999;
+}
+.child_5{
+    background-color: #009933;
 }
 
-.box{
+.main{
     display: flex;
-    height: 60%;
-}
-.aside {
-    background-color: #555;
-    width: 30%;
-    display: flex;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column-reverse;*/
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+/*    flex-wrap-> Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк.*/
 }
 
-.aside a{
-    color: #fff;
-    display: inline-block;
-    margin: 5px 0 0 5px;
+.child_2{
+    /*align-self: flex-end;*/
+/*    Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.*/
 }
 
-.main {
-    background-color: #333;
-    width: 70%;
+.child_3{
+    /*align-self: flex-start;*/
 }
-
-.footer{
-    background-color: #222;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 10px;
-    color: white;
-}
-
-
 
 
 
