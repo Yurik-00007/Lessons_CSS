@@ -1,3 +1,4 @@
+/*-------------------------------main__features-------------------------------*/
 .main__features {
     margin-top: 100px;
     display: flex;
@@ -71,3 +72,163 @@
     font-size: 16px;
     padding: 10px;
 }
+
+/*-------------------------------main__contents-------------------------------*/
+
+.main__contents {
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__contents-title,
+.main__contents-subtitle {
+    margin: 0;
+    padding: 10px;
+}
+
+.main__contents-title {
+    font-size: 52px;
+    font-family: RobotoL, sans-serif;
+}
+
+.main__contents-subtitle {
+    font-size: 20px;
+    font-family: RobotoL, sans-serif;
+    width: 40%;
+    text-align: center;
+}
+
+.main__contents-container {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    margin-left: -33px;
+}
+
+.container__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 476px;
+    height: 625px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    margin-left: 33px;
+    padding: 40px;
+}
+
+.container__item-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__item-title {
+    font-family: RobotoM, sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.container__item-description {
+    font-family: RobotoL, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    color: #5C5C5C
+}
+
+.container__item-button {
+    margin-top: 57px;
+}
+
+.container__item-img {
+    margin-top: 30px;
+}
+/*-------------------------------main__Graphik main__partners main__Testimonials-------------------------------*/
+.main__Graphik,
+.main__partners,
+.main__Testimonials
+{
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__Graphik-title,
+.main__Graphik-subtitle {
+    margin: 0;
+    padding: 10px;
+}
+.main__Graphik-title {
+    font-size: 52px;
+    font-family: RobotoL, sans-serif;
+}
+.main__Graphik-subtitle {
+    font-size: 20px;
+    font-family: RobotoL, sans-serif;
+    width: 40%;
+    text-align: center;
+}
+.main__Graphik-container img{
+    border-radius: 12px;
+}
+.main__Graphik-container-first{
+    margin: 44px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 33px;
+}
+.main__Graphik-container-second{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 33px;
+}
+.main__Graphik-container-button{
+    margin-top: 44px;
+}
+/*-------------------------------main__partners-------------------------------*/
+.main__partners-container{
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.main__partners-container-button{
+    margin-top: 50px;
+}
+/*-------------------------------main__Testimonials-------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

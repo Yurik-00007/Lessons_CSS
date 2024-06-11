@@ -1,6 +1,13 @@
-body {
-    margin: 0;
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+    body {
+    margin: 0 auto;
     background-color: #181818;
+    color: white;
 }
 
 
@@ -33,7 +40,6 @@ body {
 }
 .header__texts-title,
 .header__texts-subtitle {
-    color: white;
     margin: 0;
     width: 40%;
     text-align: center;
