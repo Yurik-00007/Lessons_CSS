@@ -1,4 +1,75 @@
-div{
-    background-color: red;
-    font-family: RobotoB;
+body {
+    margin: 0;
 }
+
+.header {
+    background-color: #181818;
+}
+
+.header__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+.header__nav {
+    margin-left: 120px;
+    margin-right: 150px;
+}
+.header__nav a {
+    font-family: RobotoM, sans-serif;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+.header__nav a:hover {
+    color: grey;
+}
+
+.header__texts {
+    margin-top: 35px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__texts-title,
+.header__texts-subtitle {
+    color: white;
+    margin: 0;
+    width: 40%;
+    text-align: center;
+}
+.header__texts-title {
+    font-size: 80px;
+    font-family: RobotoM, sans-serif;
+}
+.header__texts-subtitle {
+    font-size: 20px;
+    font-family: RobotoL, sans-serif;
+    margin-top: 17px;
+}
+
+.header__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+.header__first-button{
+    margin-right: 35px;
+}
+
+.header__image{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+

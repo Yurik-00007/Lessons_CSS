@@ -1,0 +1,39 @@
+.primary,
+.secondary{
+    color: white;
+
+    padding: 20px 40px;
+    font-family: RobotoM,sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.primary{
+    background-color: #4452FE;
+    border: none;
+}
+.primary:hover{
+    background-color: #340db7;
+}
+
+.secondary{
+    padding: 19px 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.secondary:hover{
+    color:grey;
+    border-color: grey;
+}
+
+
+
+
+
+
+
+
+
+
