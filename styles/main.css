@@ -1,0 +1,73 @@
+.main__features {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 62px 0;
+}
+
+.main__features-title,
+.main__features-subtitle {
+    margin: 0;
+    width: 40%;
+    text-align: center;
+}
+
+.main__features-title {
+    font-family: RobotoL, sans-serif;
+    font-size: 52px;
+}
+
+.main__features-subtitle {
+    margin-top: 27px;
+    font-family: RobotoL, sans-serif;
+    font-size: 20px;
+
+}
+
+.main__features__box {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.table__item {
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.table__item-box {
+    display: flex;
+    align-items: center;
+}
+
+.main__features__box-image {
+    width: 752px;
+    height: 759px;
+}
+
+.main__features__box-table {
+    width: 309px;
+    list-style-type: none;
+}
+
+.table__item-img {
+    padding: 19px 3px;
+}
+
+.table__item-name {
+    font-family: RobotoM, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    width: 153px;
+}
+
+.table__item-description {
+    width: 270px;
+    font-family: RobotoL, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
