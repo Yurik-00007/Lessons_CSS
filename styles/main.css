@@ -152,7 +152,7 @@
 .container__item-img {
     margin-top: 30px;
 }
-/*-------------------------------main__Graphik main__partners main__Testimonials-------------------------------*/
+/*-------------------------------main__Graphik main__partners main__Testimonials footer__container-------------------------------*/
 .main__Graphik,
 .main__partners,
 .main__Testimonials
@@ -207,18 +207,48 @@
 }
 /*-------------------------------main__Testimonials-------------------------------*/
 
+.main__Testimonials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 100%;
+    margin-top: 60px;
+}
+.Testimonials-container-item{
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    padding: 40px;
+    width: 23%;
+    margin-top: 20px;
+    margin-right: 20px;
 
+}
+.Testimonials-container-item-box{
+    display: flex;
+    align-items: center;
 
-
-
-
-
-
-
-
-
-
-
+}
+.Testimonials-container-item-box-first{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+.Testimonials-name,
+.Testimonials-profession{
+    font-family: RobotoM, sans-serif;
+    padding: 0px 10px;
+}
+.Testimonials-profession{
+    margin-top: 6px;
+}
+.Testimonials-container-item-discription{
+    margin-top: 30px;
+    font-family: RobotoL, sans-serif;
+}
 
 
 
