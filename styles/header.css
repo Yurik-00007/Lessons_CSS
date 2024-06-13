@@ -19,7 +19,10 @@ html{
 }
 .header__nav {
     margin-left: 120px;
-    margin-right: 150px;
+    margin-right: 185px;
+}
+.header__nav a:last-child {
+    margin-right: 0;
 }
 .header__nav a {
     font-family: RobotoM, sans-serif;

@@ -33,11 +33,16 @@
     margin-top: 80px;
 
 }
+.main__features__box > ul{
+    margin-left: -10px;
+}
+.main__features__box > ul > li:last-child {
+    margin-bottom: 0;
+}
 
 .table__item {
     margin-bottom: 25px;
     margin-left: 20px;
-    margin-right: 20px;
 }
 
 .table__item-box {
@@ -122,7 +127,7 @@
     padding: 40px;
 }
 
-.container__item-box{
+.container__item-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,65 +157,80 @@
 .container__item-img {
     margin-top: 30px;
 }
+
 /*-------------------------------main__Graphik main__partners main__Testimonials footer__container-------------------------------*/
 .main__Graphik,
 .main__partners,
-.main__Testimonials
-{
+.main__Testimonials {
     margin-top: 100px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .main__Graphik-title,
 .main__Graphik-subtitle {
     margin: 0;
     padding: 10px;
 }
+
 .main__Graphik-title {
     font-size: 52px;
     font-family: RobotoL, sans-serif;
 }
+
 .main__Graphik-subtitle {
     font-size: 20px;
     font-family: RobotoL, sans-serif;
     width: 40%;
     text-align: center;
 }
-.main__Graphik-container img{
+
+.main__Graphik-container img {
     border-radius: 12px;
+    margin-right: 33px;
 }
-.main__Graphik-container-first{
+.main__Graphik-container img:last-child{
+    margin-right: 0;
+}
+.main__Graphik-container-first {
     margin: 44px;
     display: flex;
     justify-content: space-between;
-    column-gap: 33px;
 }
-.main__Graphik-container-second{
+
+.main__Graphik-container-second {
     display: flex;
     justify-content: space-between;
-    column-gap: 33px;
 }
-.main__Graphik-container-button{
+
+.main__Graphik-container-button {
     margin-top: 44px;
 }
+
 /*-------------------------------main__partners-------------------------------*/
-.main__partners-container{
+.main__partners-container {
     margin-top: 50px;
-    width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.main__partners-container-button{
+.main__partners-container >img{
+    margin-right: 75px;
+}
+
+.main__partners-container >img:last-child{
+    margin-right: 0;
+}
+.main__partners-container-button {
     margin-top: 50px;
 }
+
 /*-------------------------------main__Testimonials-------------------------------*/
 
-.main__Testimonials-container{
+.main__Testimonials-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -218,34 +238,40 @@
     width: 100%;
     margin-top: 60px;
 }
-.Testimonials-container-item{
+
+.Testimonials-container-item {
     border: 1px solid #DEDEDE;
     border-radius: 10px;
     padding: 40px;
     width: 23%;
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
 
 }
-.Testimonials-container-item-box{
+
+.Testimonials-container-item-box {
     display: flex;
     align-items: center;
 
 }
-.Testimonials-container-item-box-first{
+
+.Testimonials-container-item-box-first {
     display: flex;
     flex-direction: column;
     margin-left: 13px;
 }
+
 .Testimonials-name,
-.Testimonials-profession{
+.Testimonials-profession {
     font-family: RobotoM, sans-serif;
     padding: 0px 10px;
 }
-.Testimonials-profession{
+
+.Testimonials-profession {
     margin-top: 6px;
 }
-.Testimonials-container-item-discription{
+
+.Testimonials-container-item-discription {
     margin-top: 30px;
     font-family: RobotoL, sans-serif;
 }
